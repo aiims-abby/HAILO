@@ -1,0 +1,29 @@
+# Secrets & env — never commit
+.env
+.env.*
+*.local.*
+secrets/
+**/credentials.*
+
+# Claude Code — personal/local only, never commit
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Dependencies
+node_modules/
+
+# Build output
+build/
+dist/
+.next/
+out/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*

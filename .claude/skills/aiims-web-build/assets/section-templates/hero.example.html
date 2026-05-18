@@ -1,0 +1,43 @@
+<!--
+  HERO — starter pattern (mobile-first, Tailwind)
+  Reference only. Adapt to project brand + stack. frontend-design governs the look.
+
+  Responsive contract:
+  - Mobile (<=640px): single column, image below text, CTA comfortable width
+  - Tablet (md, 641-1024px): still stacked or 2-up depending on content
+  - Desktop (lg, >=1025px): two-column, contained max-width
+-->
+<section class="w-full">
+  <div class="mx-auto max-w-6xl px-5 py-16 md:py-20 lg:py-28
+              flex flex-col gap-10
+              lg:flex-row lg:items-center lg:gap-16">
+
+    <!-- Copy -->
+    <div class="flex-1 flex flex-col gap-5 text-center lg:text-left">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[var(--brand-text)]">
+        Headline goes here, kept short and specific
+      </h1>
+      <p class="text-base sm:text-lg text-[var(--brand-text)]/70 max-w-prose mx-auto lg:mx-0">
+        One supporting sentence that earns the click. No filler.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+        <a href="#contact"
+           class="inline-flex items-center justify-center min-h-[44px] px-6 py-3
+                  rounded-lg font-semibold bg-[var(--brand-primary)] text-white">
+          Primary CTA
+        </a>
+        <a href="#features"
+           class="inline-flex items-center justify-center min-h-[44px] px-6 py-3
+                  rounded-lg font-semibold border border-[var(--brand-text)]/20 text-[var(--brand-text)]">
+          Secondary
+        </a>
+      </div>
+    </div>
+
+    <!-- Media: scales within viewport, never fixed-width -->
+    <div class="flex-1 w-full">
+      <img src="" alt="Describe the image"
+           class="w-full h-auto rounded-xl object-cover" />
+    </div>
+  </div>
+</section>
